@@ -18,7 +18,7 @@
 - 家长来校引导
 
 ## 界面预览
-<img src="img/preview.png" width = "40%" height = "40%" alt="校园导航预览" align=center />
+<img src="img/preview.png" width = "20%" height = "20%" alt="校园导航预览" align=center />
 
 ## 未来发展前景
 - 增加各个地标位置的更加详细的资料- 可以推广应用到其他高校- 与教务系统对接，实现与课程安排相结合的提醒和导航
