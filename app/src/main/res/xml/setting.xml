@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="基本设置">
+        <SwitchPreference
+            android:title="仅使用GPS进行定位"
+            android:key="gps_only"
+            android:summary="GPS信号弱时请不要打开此项"/>
+        <SwitchPreference
+            android:title="高清晰度全景图像"
+            android:key="pano_def"
+            android:summary="较高的清晰度会带来更多的流量消耗\n以及较慢的全景图加载速度"/>
+        <SwitchPreference
+            android:title="开启室内定位模式"
+            android:checked="true"
+            android:key="door_loc"
+            android:summary="提高在室内的定位精度"/>
+        <SwitchPreference
+            android:title="显示精度范围"
+            android:key="radius_mode"
+            android:summary="在地图上标识出精度圈"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="更多">
+        <Preference
+            android:key="about"
+            android:title="科学与技术协会"
+            android:summary="关于科协"/>
+        <Preference
+            android:key="feedback"
+            android:title="建议与反馈"
+            android:summary="使用过程中出现任何问题都可以在这里进行反馈噢"/>
+        <Preference
+            android:key="update"
+            android:title="检查更新"
+            android:summary="当前版本 : 1.0.1"/>
+    </PreferenceCategory>
+</PreferenceScreen>

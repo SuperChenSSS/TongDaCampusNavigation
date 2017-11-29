@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tyq19.lbs.MainActivity">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:elevation="6dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:clickable="true" />
+
+        <FrameLayout
+            android:id="@+id/naviView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:background="#333333"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/naviText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="导航中..."
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/naviStop"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="end"
+                android:textColor="#48A0F9"
+                android:text="停止"/>
+        </FrameLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="170dp"
+            app:backgroundTint="@android:color/background_light"
+            app:elevation="1dp"
+            app:rippleColor="@android:color/darker_gray"
+            app:srcCompat="@drawable/ic_action_satellite" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="110dp"
+            app:backgroundTint="@android:color/white"
+            app:elevation="1dp"
+            app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_navigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="50dp"
+            app:backgroundTint="@android:color/background_light"
+            app:elevation="1dp"
+            app:rippleColor="@android:color/darker_gray"
+            app:srcCompat="@drawable/ic_navigation_black_24dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_panorama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="230dp"
+            android:clickable="false"
+            app:backgroundTint="@android:color/darker_gray"
+            app:elevation="1dp"
+            app:rippleColor="@android:color/darker_gray"
+            app:srcCompat="@drawable/ic_action_panorama" />
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <Preference
+            android:key="website"
+            android:title="访问科协官网"
+            android:summary="www.tdsast.cn"/>
+        <Preference
+            android:key="QQ"
+            android:title="QQ公众号"
+            android:summary="2944381453" />
+        <Preference
+            android:key="wechat"
+            android:title="微信公众号"
+            android:summary="NY-TD-KX"/>
+    <PreferenceCategory android:title="软件信息">
+        <Preference
+            android:key="website"
+            android:title
+                ="科学与技术协会 计算机部 出品" />
+    </PreferenceCategory>
+</PreferenceScreen>
