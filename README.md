@@ -6,7 +6,7 @@
 ### 科协计算机部
 
 ## APK下载
-### [通达校园导航最新版下载](./app/TongDaNavi1.1.1.apk)
+### [通达校园导航最新版下载](https://github.com/SuperChenSSS/TongDaCampusNavigation/releases/download/V1.1.1-Latest/TongDaNavi1.1.1.apk)
 
 ## 项目特点：
 - 采用百度地图SDK开发，地图实时更新
